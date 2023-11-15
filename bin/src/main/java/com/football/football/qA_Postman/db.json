@@ -1,0 +1,95 @@
+{
+    "equipes": [
+      {
+        "id": 1,
+        "nomEquipe": "Maroc",
+        "pays":"Maroc"
+      },
+      {
+        "id": 2,
+        "nomEquipe": "ATL MADRID",
+        "pays":"spain"
+      },
+      {
+        "id": 3,
+        "nomEquipe": "PSG",
+        "pays":"portugal"
+      }
+    ],
+    "joueurs": [
+      {
+        "id": 1,
+        "nomJoueur": "Joueur 1",
+        "poste": "attaquant",
+        "equipe": {
+          "idEquipe": 2
+        }
+      },
+      {
+        "id": 2,
+        "nomJoueur": "Joueur 2",
+        "poste": "défenseur",
+        "equipe": {
+          "idEquipe": 2
+        }
+      },
+      {
+        "id": 3,
+        "nomJoueur": "Joueur 3",
+        "poste": "attaquant",
+        "equipe": {
+          "idEquipe": 3
+        }
+      }
+    ],
+    "stades": [
+      {
+        "id": 1,
+        "nomStade": "Stade 1",
+        "ville": "doha"
+      },
+      {
+        "id": 2,
+        "nomStade": "Stade 2",
+        "ville": "tanger"
+      }
+    ],
+    "arbitres": [
+      {
+        "id": 1,
+        "nom": "Arbitre 1",
+        "nationalite": "maroc"
+      },
+      {
+        "id": 2,
+        "nom": "Arbitre 2",
+        "nationalite": "qatar"
+      }
+    ],
+    "matches": [
+      {
+        "dateMatch": "2023-02-28",
+        "heureMatch": 15,
+        "arbitre": {"idArbitre": 2},
+        "stade": {"idStade": 2},
+        "equipes": [{"idEquipe": 2}, {"idEquipe": 3}]
+      },
+      {
+        "dateMatch": "2023-02-28",
+        "heureMatch": 18,
+        "arbitre": {"idArbitre": 2},
+        "stade": {"idStade": 2},
+        "equipes": [{"idEquipe": 1}, {"idEquipe": 3}]
+      }    
+    ],
+    "match_equipe": [
+      {
+        "matchId": 1,
+        "equipeId": 2
+      },
+      {
+        "matchId": 1,
+        "equipeId": 3
+      }
+    ]
+}
